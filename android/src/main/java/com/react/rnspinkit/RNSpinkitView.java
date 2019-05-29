@@ -15,6 +15,7 @@ import com.github.ybq.android.spinkit.style.DoubleBounce;
 import com.github.ybq.android.spinkit.style.FadingCircle;
 import com.github.ybq.android.spinkit.style.FoldingCube;
 import com.github.ybq.android.spinkit.style.Pulse;
+import com.github.ybq.android.spinkit.style.MultiplePulse;
 import com.github.ybq.android.spinkit.style.RotatingPlane;
 import com.github.ybq.android.spinkit.style.ThreeBounce;
 import com.github.ybq.android.spinkit.style.WanderingCubes;
@@ -70,6 +71,8 @@ public class RNSpinkitView extends SpinKitView{
                 return new FadingCircle();
             case "Pulse" :
                 return new Pulse();
+            case "MultiplePulse" :
+                return new MultiplePulse();
             case "ChasingDots":
                 // Add scale factor to prevent clipping
                 Sprite d = new ChasingDots();

@@ -65,6 +65,8 @@
       style = RTSpinKitViewStyleWanderingCubes;
    else if ([type isEqual:@"Pulse"])
       style = RTSpinKitViewStylePulse;
+   else if ([type isEqual:@"MultiplePulse"])
+      style = RTSpinKitViewStyleMultiplePulse;
    else if ([type isEqual:@"ChasingDots"])
       style = RTSpinKitViewStyleChasingDots;
    else if ([type isEqual:@"ThreeBounce"])

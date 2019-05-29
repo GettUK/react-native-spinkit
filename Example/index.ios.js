@@ -9,14 +9,14 @@ var {
   Text
 } = ReactNative;
 
-var Spinner = require('react-native-spinkit');
+var Spinner = require('../index');
 
 var Example = React.createClass({
 
   getInitialState() {
     return {
       index: 0,
-      types: ['CircleFlip', 'Bounce', 'Wave', 'WanderingCubes', 'Pulse', 'ChasingDots', 'ThreeBounce', 'Circle', '9CubeGrid', 'WordPress', 'FadingCircle', 'FadingCircleAlt', 'Arc', 'ArcAlt'],
+      types: ['CircleFlip', 'Bounce', 'Wave', 'WanderingCubes', 'Pulse', 'MultiplePulse', 'ChasingDots', 'ThreeBounce', 'Circle', '9CubeGrid', 'WordPress', 'FadingCircle', 'FadingCircleAlt', 'Arc', 'ArcAlt'],
       size: 100,
       color: "#FFFFFF",
       isVisible: true

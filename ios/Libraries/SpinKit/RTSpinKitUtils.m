@@ -34,6 +34,7 @@
 #import "RTSpinKitFadingCircleAnimation.h"
 #import "RTSpinKitPlaneAnimation.h"
 #import "RTSpinKitPulseAnimation.h"
+#import "RTSpinKitMultiplePulseAnimation.h"
 #import "RTSpinKitThreeBounceAnimation.h"
 #import "RTSpinKitWanderingCubesAnimation.h"
 #import "RTSpinKitWaveAnimation.h"
@@ -73,6 +74,9 @@ NSObject<RTSpinKitAnimating>* RTSpinKitAnimationFromStyle(RTSpinKitViewStyle sty
         case RTSpinKitViewStylePulse:
             return [[RTSpinKitPulseAnimation alloc] init];
 
+        case RTSpinKitViewStyleMultiplePulse:
+            return [[RTSpinKitMultiplePulseAnimation alloc] init];
+
         case RTSpinKitViewStyleChasingDots:
             return [[RTSpinKitChasingDotsAnimation alloc] init];
 
@@ -96,7 +100,7 @@ NSObject<RTSpinKitAnimating>* RTSpinKitAnimationFromStyle(RTSpinKitViewStyle sty
 
         case RTSpinKitViewStyleArc:
             return [[RTSpinKitArcAnimation alloc] init];
-			
+
 		case RTSpinKitViewStyleArcAlt:
 			return [[RTSpinKitArcAltAnimation alloc] init];
 

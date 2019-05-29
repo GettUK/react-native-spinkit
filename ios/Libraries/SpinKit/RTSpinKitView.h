@@ -31,6 +31,7 @@ typedef NS_ENUM(NSInteger, RTSpinKitViewStyle) {
     RTSpinKitViewStyleWave,
     RTSpinKitViewStyleWanderingCubes,
     RTSpinKitViewStylePulse,
+    RTSpinKitViewStyleMultiplePulse,
     RTSpinKitViewStyleChasingDots,
     RTSpinKitViewStyleThreeBounce,
     RTSpinKitViewStyleCircle,
@@ -76,7 +77,7 @@ typedef NS_ENUM(NSInteger, RTSpinKitViewStyle) {
  Initializes and returns an activity indicator object.
 
  @param style The style of the activity indicator.
- 
+
  @return The newly-initialized SpinKit view.
  */
 -(instancetype)initWithStyle:(RTSpinKitViewStyle)style;
@@ -125,7 +126,7 @@ typedef NS_ENUM(NSInteger, RTSpinKitViewStyle) {
 
 /**
  Sets the color of the spinner.
- 
+
  @param color The desired color for the spinner.
  @param animated Whether or not to animate.
  */
